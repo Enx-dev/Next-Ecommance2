@@ -94,7 +94,7 @@ function CartScreen() {
               </li>
               <li>
                 <button
-                  onClick={() => router.push("/checkout")}
+                  onClick={() => router.push("login?redirect=/shipping")}
                   className="w-full primary-button">
                   Checkout
                 </button>
@@ -107,4 +107,4 @@ function CartScreen() {
   );
 }
 
-export default dynamic(()=> Promise.resolve(CartScreen),{ssr:false})
+export default dynamic(() => Promise.resolve(CartScreen), { ssr: false });
